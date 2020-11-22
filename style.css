@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&display=swap');
+body {
+    font-family: 'Cormorant Upright', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+/* ---------------- */
+.listStyle{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ; 
+}
+/* --------------l'objet de cv --------- */
+header{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/img\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ; 
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center ; 
+}
+#intro {
+background-color: rgba(217, 184, 193, 0.7);
+text-align: center;
+padding: 20px 50px ;
+color: #076873;
+font-size: 18px;
+}
+#intro h1{
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1px;
+}
+
+/* ---------------la navbar------------ */
+#navBar {
+    font-size: 22px;
+    font-weight: 700;
+    background-color:#076873 ;
+    margin: 0px auto;
+}
+#navBar a{
+    color: #fff;
+}
+#navBar li{
+    background-color:#076873 ;
+    padding: 20px 15px;
+}
+.ongletActive {
+    background-color:#054850 !important;
+}
+.fixe {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+/* ----------la partie profile-----------  */
+main{
+    background-color:#F27D72 ;
+    margin: 0;
+}
+h3{
+    color: #076873;
+}
+section {
+    margin: 0px 8vw;
+    padding: 10px ;
+    background-color: #fff;
+}
+#profile{
+    border-right:1px solid #F27D72;
+    padding-right: 50px;
+}
+#technoWeb{
+    padding-left: 50px;
+}
+/* ------------la partie formation--------- */
+section>h3{
+    text-align: center;
+}
+section h4{
+    color: #F27D72;
+}
+.left {
+    text-align: end;
+    padding-right: 60px;
+}
+.right {
+    text-align: start;
+    padding-left: 5px;
+}
+/* ----------------cards ----------*/
+.card {
+    background-color: #D9B8C1;
+    width: 18vw;
+    height: 39vh;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10vh;
+}
+.card i {
+    font-size: 80px;
+    padding: 20px 0;
+}
+/* -------------la partie contact---- */
+footer{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40vh;
+    padding: 0 100px;
+    background-color: #076873;
+}
+.contact li {
+    font-size: 24px;
+    padding: 10px 20px;
+    color: #fff;
+}
+#iconContact li {
+    color: #BF7B3F;
+    font-size: 30px;
+}
+/* ----------le message de bienvenue-------------- */
+#main { 
+    width: 100%;
+   height: 100%;
+   background:rgba(255, 255, 255,0.8);
+   position: absolute;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 20;
+
+
+}
+#pop-up {
+   width: 30vw;
+   height: 240px;
+   border-radius: 5px;
+   box-sizing: border-box;
+   padding: 20px;
+   z-index: 25;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #076873;
+} 
+#pop-up h3 {
+    color: #fff;
+}
+#pop-up .bouton{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    text-align: end;
+}
+.afficheMenu{
+    display: none;
+}
