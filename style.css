@@ -80,6 +80,38 @@ font-size: 18px;
     top: 0;
     width: 100vw;
 }
+/* ------------------dark mode------- */
+button {
+    background-color:  #fff;
+    font-weight: 700;
+    color: #02272b;
+    border: 2px solid#02272b;
+    padding:10px;
+    border-radius: 5px;
+}
+.bodyDark{
+    color:#fff ;
+    background-color: #000 ;
+}
+.h3Dark {
+    color: #06acbe;
+}
+.h4Dark {
+    color: #F27D72;
+}
+.cardDark{
+    background-color:#000 !important;
+}
+.mainDark {
+    background-color: #460b06 !important;
+}
+.headerDark{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/img\ \(1\).jpg);
+
+}
+.bleuDark{
+    background-color: #022327 !important;
+}
 /* ----------la partie profile-----------  */
 main{
     background-color:#F27D72 ;
@@ -206,6 +238,7 @@ footer{
     }
     #profile {
         grid-area: 1/1/2/2;
+        border: none;
 
     }
     #technoWeb {
