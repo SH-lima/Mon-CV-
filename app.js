@@ -44,12 +44,9 @@ window.addEventListener("scroll", ()=>{
 
     if(window.scrollY>= navbarSetTop){
        navbar.classList.add('fixe') 
-    } else 
-    // if(window.scrollY < navbar.offsetTop)
-    {
+    } else {
         navbar.classList.remove('fixe')    
     }
-    
 })
 
 
