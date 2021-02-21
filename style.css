@@ -30,11 +30,7 @@ header{
     width: 100%;
     margin: auto;
 }
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-around ; 
-}
+
 .center{
     display: flex;
     align-items: center;
@@ -71,7 +67,7 @@ font-size: 18px;
     padding: 20px 15px;
 }
 .ongletActive {
-    background-color:#054850 !important;
+    color:#4feafc !important;
 }
 .fixe {
     position: absolute;
@@ -89,13 +85,31 @@ h4 a {
 
 }
 /* ------------------dark mode------- */
-button {
-    background-color:  #fff;
-    font-weight: 700;
-    color: #02272b;
-    border: 2px solid#02272b;
-    padding:10px;
-    border-radius: 5px;
+#darkMode i{
+    font-size: 20PX;
+    position: absolute;
+    left: -4px;
+    top: -1px;
+}
+#darkMode i::before{
+    padding: 10px;
+     border-radius: 50%;
+    background-color: rgb(245, 188, 188); 
+    
+}
+#darkMode{
+    display: inline-block;
+    height: 25px;
+    width: 50px;
+    font-size: 40PX;
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid white; 
+}
+.changeToDark{
+    left: 40% !important;
+    color: white;
+   
 }
 .bodyDark{
     color:#fff ;
@@ -157,7 +171,7 @@ section h4{
 }
 /* ----------------cards ----------*/
 .card {
-    background-color: #D9B8C1;
+    background-color: #8a3a4f;
     width: 18vw;
     height: 42vh;
     color: #fff;

@@ -1,16 +1,17 @@
-// selectionner les onglets de la navbar 
-const onglet = document.querySelector("#navBar li ")
-const liens = document.querySelectorAll("#navBar li a ")
-const lienLocation = location.href
-// ceer une fonction qui permet de activer l'onglet en clickant 
-for (let i = 0; i< liens.length; i++) {
-    // lien.preventDefault();
-if (liens[i].href == location.href){
-    liens[i].classList.add("ongletActive") 
-    console.log("hello")
-}else if (liens[i].href != location.href){
-    liens[i].classList.remove("ongletActive") 
-}}
+// // selectionner les onglets de la navbar 
+// const onglet = document.querySelector("#navBar li ")
+// const liens = document.querySelectorAll("#navBar li a ")
+// const lienLocation = location.href
+// console.log(lienLocation)
+// // ceer une fonction qui permet de activer l'onglet en clickant 
+// for (let i = 0; i< liens.length; i++) {
+//     // lien.preventDefault();
+// if (liens[i].href == location.href){
+//     liens[i].classList.add("ongletActive") 
+//     console.log("hello")
+// }else if (liens[i].href != location.href){
+//     liens[i].classList.remove("ongletActive") 
+// }}
         
 
 
@@ -69,7 +70,8 @@ const sr=ScrollReveal( {
 
 
 // dark mode 
-const button = document.querySelector("button")
+const darkMode = document.querySelector("#darkMode")
+const buttondarkMode = document.querySelector("#darkMode i")
 const section = document.querySelectorAll("section")
 const titleh3 = document.querySelector("h3")
 const titleh4 = document.querySelector("h4")
@@ -80,8 +82,8 @@ const navDark = document.querySelector("#navBar")
 const footerDark = document.querySelector("footer")
 const navElements = document.querySelectorAll("#navBar li")
 
-button.addEventListener("click", ()=>{
-    
+darkMode.addEventListener("click", ()=>{
+    buttondarkMode.classList.toggle("changeToDark")
     titleh3.classList.toggle("h3Dark")
     titleh4.classList.toggle("h4Dark")
     
@@ -99,7 +101,7 @@ button.addEventListener("click", ()=>{
         element.classList.toggle('bleuDark')
         
     }
-    debugger;
+    // debugger; 
     mainDark.classList.toggle("mainDark")
     headerDark.classList.toggle("headerDark")
     navDark.classList.toggle('bleuDark')
