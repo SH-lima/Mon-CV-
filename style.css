@@ -293,12 +293,15 @@ footer{
         text-align: end;
         padding-right: 3vw;
     }
+    #projets-list{
+        margin:2vw auto;
+    }
 }
 
 
 
 #projets-list{
-    max-width: 55vw;
+    max-width: 50vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     grid-gap: 1rem;
