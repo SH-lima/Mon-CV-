@@ -85,19 +85,19 @@ h4 a {
 
 }
 /* ------------------dark mode------- */
-#darkMode i{
+.darkMode i{
     font-size: 20PX;
     position: absolute;
     left: -4px;
     top: -1px;
 }
-#darkMode i::before{
+.darkMode i::before{
     padding: 10px;
      border-radius: 50%;
     background-color: rgb(245, 188, 188); 
     
 }
-#darkMode{
+.darkMode{
     display: inline-block;
     height: 25px;
     width: 50px;
@@ -188,7 +188,7 @@ footer{
     display: flex;
     justify-content: start;
     align-items: center;
-    height: 40vh;
+    /* height: 40vh; */
     padding: 0 100px;
     background-color: #076873;
 }
@@ -293,4 +293,39 @@ footer{
         text-align: end;
         padding-right: 3vw;
     }
+}
+
+
+
+#projets-list{
+    max-width: 55vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    padding: 0;
+    margin:2vw auto;
+}
+#projets-list li {
+    padding: 1rem;
+    /* outline: 2px dotted; */
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#projets-list img{
+    border: 2px solid;
+    max-width: 30rem;
+    box-shadow: 0.25rem 0.25rem 0 black;
+}
+#projets-list h4{
+    margin: 0.5em ;
+}
+.github-item{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.github a{
+    color: White;
 }

@@ -1,20 +1,3 @@
-
-// fixer la navbar 
-const navbar = document.querySelector("#navBar")
-const main = document.querySelector("main")
-   const navbarSetTop = navbar.offsetTop
-window.addEventListener("scroll", ()=>{
-
-    if(window.scrollY>= navbarSetTop){
-       navbar.classList.add('fixe') 
-    } else {
-        navbar.classList.remove('fixe')    
-    }
-})
-
-
-
-
 const sr=ScrollReveal( {
     
     duration : 2000 ,
@@ -39,7 +22,7 @@ const titleh3 = document.querySelector("h3")
 const titleh4 = document.querySelector("h4")
 const cards = document.querySelectorAll(".card")
 const mainDark = document.querySelector("main")
-const headerDark = document.querySelector("header")
+const headerDark = document.querySelector("nav")
 const navDark = document.querySelector("#navBar")
 const footerDark = document.querySelector("footer")
 const navElements = document.querySelectorAll("#navBar li")
@@ -47,7 +30,6 @@ const navElements = document.querySelectorAll("#navBar li")
 darkMode.addEventListener("click", ()=>{
     console.log("hi")
     buttondarkMode.classList.toggle("changeToDark")
-    titleh3.classList.toggle("h3Dark")
     titleh4.classList.toggle("h4Dark")
     
     for (let index = 0; index < section.length; index++) {
